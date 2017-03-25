@@ -16,7 +16,7 @@
 		<context.path>spring-webservices-sample</context.path>
 	</properties>
 	<scm>
-    <connection>scm:git:https://github.com/karthicku/spring-ws.git</connection>
+    <connection>scm:git:karthicku@https://github.com/karthicku/spring-ws.git</connection>
 </scm>
 	<build>
 	<pluginManagement>
