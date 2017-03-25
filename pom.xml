@@ -18,7 +18,7 @@
 	</properties>
 	
 	<scm>
-    <connection>scm:git:karthicku@https://github.com/karthicku/spring-ws.git</connection>
+    <connection>scm:git:git://github.com/karthicku/spring-ws.git</connection>
 </scm>
 	<build>
 	<pluginManagement>
