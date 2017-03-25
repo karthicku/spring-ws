@@ -15,6 +15,9 @@
 		<log4j.version>1.2.16</log4j.version>
 		<context.path>spring-webservices-sample</context.path>
 	</properties>
+	<scm>
+    <connection>scm:git:https://github.com/karthicku/spring-ws.git</connection>
+</scm>
 	<build>
 	<pluginManagement>
 		<plugins>
