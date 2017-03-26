@@ -7,6 +7,6 @@ stage('Checkout from GitHub') {
     stage('Build') {
     // No special needs here, if your projects relys on submodules the checkout step would need to be different
 
-    echo "checkout"
+    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
   }
 }
