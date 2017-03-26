@@ -6,7 +6,7 @@ stage('Checkout from GitHub') {
   }
     stage('Build') {
     // No special needs here, if your projects relys on submodules the checkout step would need to be different
-    mvn clean install
+
     echo "checkout"
   }
 }
