@@ -1,5 +1,13 @@
 echo 'hello'
-
+properties(
+    [
+        [
+            $class: 'BuildDiscarderProperty',
+            strategy: [$class: 'LogRotator', numToKeepStr: '10']
+        ],
+        pipelineTriggers([cron('H/30 * * * *')]),
+    ]
+)
 //Add maven build goals
 def buildGoal(String name) {
         echo "Invoke method $name"
