@@ -1,7 +1,7 @@
 node{
 stage 'checkout'
-def grV = load "groovy_func.groovy"
 checkout scm
+def grV = load "groovy_func.groovy"
 env.MAVEN_OPTS = "-XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Xmx1024m -XX:MaxPermSize=512m"   
       grV.buildGoal("Job1")
       grV.releaseMethod("Job1")
