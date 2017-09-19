@@ -20,7 +20,7 @@ public class AccountServiceEndpoint
 	private static final String TARGET_NAMESPACE = "http://com/blog/samples/webservices/accountservice";
 
 	@Autowired
-	private AccountService accountService_i;
+	private AccountService accountServiceDetails;
 
 	/**
 	 * Gets the account details.
@@ -34,13 +34,13 @@ public class AccountServiceEndpoint
 		AccountDetailsResponse response = new AccountDetailsResponse();
 
 		/* call Spring injected service implementation to retrieve account data */
-		Account account = accountService_i.getAccountDetails(request.getAccountNumber());
+		Account account = accountServiceDetails.getAccountDetails(request.getAccountNumber());
 		response.setAccountDetails(account);
 		return response;
 	}
 
-	public void setAccountService(AccountService accountService_p)
+	public void setAccountService(AccountService accountService)
 	{
-		this.accountService_i = accountService_p;
+		this.accountServiceDetails = accountService;
 	}
 }
