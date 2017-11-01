@@ -27,7 +27,7 @@ public class AccountServiceImpl implements AccountService
 		account.setAccountNumber("12345");
 		account.setAccountStatus(EnumAccountStatus.ACTIVE);
 		account.setAccountName("Joe Bloggs");
-		account.setAccountBalance(3400);
+		account.setAccountBalance(234);
 
 		return account;
 	}
